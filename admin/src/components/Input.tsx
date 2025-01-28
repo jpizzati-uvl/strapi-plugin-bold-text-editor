@@ -2,7 +2,7 @@ import { useState, useRef, ClipboardEvent, KeyboardEvent } from 'react';
 import styled from 'styled-components';
 import ReactContentEditable, { ContentEditableEvent } from 'react-contenteditable';
 import { inputFocusStyle } from '@strapi/design-system';
-import { Flex, IconButton, IconButtonGroup, darkTheme } from '@strapi/design-system';
+import { Flex, IconButton, IconButtonGroup } from '@strapi/design-system';
 import { useIntl, MessageDescriptor } from 'react-intl';
 import { Field } from '@strapi/design-system';
 import FormatClear from '../icons/FormatClear';
@@ -223,7 +223,7 @@ const Input: React.FC<InputProps> = ({
           <IconButton
             withTooltip={false}
             size="S"
-            style={{ 'border-top-left-radius': '0px', 'border-bottom-left-radius': '0px' }}
+            style={{ borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px' }}
             onClick={() => executeCommand('bold')}
             label={formatMessage({ id: 'bold-title-editor.input.bold', defaultMessage: 'Bold' })}
           >
