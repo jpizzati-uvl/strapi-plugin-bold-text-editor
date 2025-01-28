@@ -22,7 +22,7 @@ type ParsedNode = {
   bold?: boolean;
 };
 
-const ContentEditableWrapper = styled.div`
+const ContentEditableWrapper = styled(ContentEditable)`
   flex: 1;
   width: 100%;
   font-size: ${({ theme }) => theme.fontSizes[2]};
@@ -206,21 +206,19 @@ const Input: React.FC<InputProps> = ({
 
 
   return (
-    <Field.Root name={name} id={name} error={error} hint={hint}>
-      <Field.Label action={labelAction} required={required}>
+    <Field.Root name={name} id={name} error={error} hint={hint} required={required}>
+      <Field.Label action={labelAction} >
         {name}
       </Field.Label>
       <Field.Hint />
-      <Flex spacing={2}>
-        <ContentEditableWrapper>
-          <ContentEditable
-            innerRef={ref as React.RefObject<HTMLElement>}
-            html={getHtml(value, markdown)}
-            onPaste={handleOnPaste}
-            onChange={handleOnChange}
-            onKeyDown={handleOnKeyDown}
-          />
-       </ContentEditableWrapper>
+      <Flex>
+        <ContentEditableWrapper
+          innerRef={ref as React.RefObject<HTMLElement>}
+          html={getHtml(value, markdown)}
+          onPaste={handleOnPaste}
+          onChange={handleOnChange}
+          onKeyDown={handleOnKeyDown}
+        />
         <IconButtonGroup>
           <IconButton
             withTooltip={false}
