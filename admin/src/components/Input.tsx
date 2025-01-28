@@ -225,7 +225,7 @@ const Input: React.FC<InputProps> = ({
             size="S"
             style={{ 'border-top-left-radius': '0px', 'border-bottom-left-radius': '0px' }}
             onClick={() => executeCommand('bold')}
-            label={formatMessage({ id: 'bold-title-editor.input.bold', defaultMessage: 'Bold' })}
+            label={formatMessage({ id: 'bold-text-editor.input.bold', defaultMessage: 'Bold' })}
           >
             <Bold />
           </IconButton>
@@ -234,7 +234,7 @@ const Input: React.FC<InputProps> = ({
             size="S"
             onClick={handleOnClear}
             label={formatMessage({
-              id: 'bold-title-editor.input.clear',
+              id: 'bold-text-editor.input.clear',
               defaultMessage: 'Clear format',
             })}
           >
@@ -245,7 +245,7 @@ const Input: React.FC<InputProps> = ({
             size="S"
             onClick={handleOnPreview}
             label={formatMessage({
-              id: 'bold-title-editor.input.code',
+              id: 'bold-text-editor.input.code',
               defaultMessage: 'Show code',
             })}
           >

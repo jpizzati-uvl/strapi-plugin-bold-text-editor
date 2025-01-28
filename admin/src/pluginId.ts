@@ -1,1 +1,1 @@
-export const PLUGIN_ID = 'bold-title-editor';
+export const PLUGIN_ID = 'bold-text-editor';

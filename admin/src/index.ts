@@ -7,14 +7,14 @@ export default {
     app.customFields.register({
       name: 'bold-title',
       type: 'string',
-      pluginId: 'bold-title-editor',
+      pluginId: 'bold-text-editor',
       icon: Bold,
       intlLabel: {
-        id: 'bold-title-editor.label',
+        id: 'bold-text-editor.label',
         defaultMessage: 'Bold title editor',
       },
       intlDescription: {
-        id: 'bold-title-editor.description',
+        id: 'bold-text-editor.description',
         defaultMessage: 'A bold title/text editor to accent certain parts',
       },
       components: {
@@ -25,11 +25,11 @@ export default {
         base: [
           {
             intlLabel: {
-              id: 'bold-title-editor.options.base.output',
+              id: 'bold-text-editor.options.base.output',
               defaultMessage: 'Output',
             },
             description: {
-              id: 'bold-title-editor.options.base.output.description',
+              id: 'bold-text-editor.options.base.output.description',
               defaultMessage: 'Choose output of plugin',
             },
             name: 'options.output',
@@ -41,7 +41,7 @@ export default {
                 value: 'html',
                 metadatas: {
                   intlLabel: {
-                    id: 'bold-title-editor.options.base.output.html',
+                    id: 'bold-text-editor.options.base.output.html',
                     defaultMessage: 'HTML',
                   },
                 },
@@ -51,7 +51,7 @@ export default {
                 value: 'markdown',
                 metadatas: {
                   intlLabel: {
-                    id: 'bold-title-editor.options.base.output.markdown',
+                    id: 'bold-text-editor.options.base.output.markdown',
                     defaultMessage: 'Markdown',
                   },
                 },
@@ -70,11 +70,11 @@ export default {
                 name: 'required',
                 type: 'checkbox',
                 intlLabel: {
-                  id: 'bold-title-editor.options.advanced.requiredField',
+                  id: 'bold-text-editor.options.advanced.requiredField',
                   defaultMessage: 'Required field',
                 },
                 description: {
-                  id: 'bold-title-editor.options.advanced.requiredField.description',
+                  id: 'bold-text-editor.options.advanced.requiredField.description',
                   defaultMessage: "You won't be able to create an entry if this field is empty",
                 },
               },

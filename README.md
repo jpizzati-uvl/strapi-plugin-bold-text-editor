@@ -1,24 +1,25 @@
 # Strapi plugin Bold title editor
 
-A bold title/text editor to accentuate **certain parts** through HTML or Markdown. 
+A bold title/text editor to accentuate **certain parts** through HTML or Markdown.
 
 ## ✨ Compatibility
-This plugin is currently in development for version 5. In the meantime, use this version:
-https://www.npmjs.com/package/@sklinet/strapi-plugin-bold-title-editor
 
+This plugin is currently in development for version 5. In the meantime, use this version:
+https://www.npmjs.com/package/@sklinet/strapi-plugin-bold-text-editor
 
 ## ✨ Features
-* **Different output options:** choose between HTML and Markdown.
-* **Actions:** accentuate **certain parts**, preview code output and clear text format.
+
+- **Different output options:** choose between HTML and Markdown.
+- **Actions:** accentuate **certain parts**, preview code output and clear text format.
 
 ## ⏳ Installation
 
 ```sh
 # Using Yarn
-yarn add @ef2/strapi-plugin-bold-title-editor
+yarn add @ef2/strapi-plugin-bold-text-editor
 
 # Or using NPM
-npm install @ef2/strapi-plugin-bold-title-editor
+npm install @ef2/strapi-plugin-bold-text-editor
 ```
 
 Then, you'll need to build your admin panel:
@@ -33,9 +34,10 @@ npm run build
 
 ## 🎉 Usage
 
-![bold title editor screenshot](./bold-title-editor.png)
+![bold title editor screenshot](./bold-text-editor.png)
 
 ### HTML
+
 #### React/Next.js
 
 ```tsx
@@ -44,16 +46,18 @@ npm run build
 ```
 
 #### Vue
+
 ```html
 <h1 v-html="title" />
 <h3><a href="#" v-html="title" /></h3>
 ```
 
 ### Markdown
+
 #### React
 
 ```tsx
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 
-<ReactMarkdown children={title} />
+<ReactMarkdown children={title} />;
 ```
