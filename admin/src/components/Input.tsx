@@ -1,6 +1,6 @@
 import { useState, useRef, ClipboardEvent, KeyboardEvent } from 'react';
 import styled from 'styled-components';
-import ReactContentEditable, { ContentEditableEvent } from 'react-contenteditable';
+import ContentEditable, { ContentEditableEvent } from 'react-contenteditable';
 import { inputFocusStyle } from '@strapi/design-system';
 import { Flex, IconButton, IconButtonGroup } from '@strapi/design-system';
 import { useIntl, MessageDescriptor } from 'react-intl';
@@ -22,7 +22,7 @@ type ParsedNode = {
   bold?: boolean;
 };
 
-const ContentEditable = styled(ReactContentEditable)`
+const ReactContentEditable = styled(ContentEditable)`
   flex: 1;
   width: 100%;
   font-size: ${({ theme }) => theme.fontSizes[2]};
@@ -212,7 +212,7 @@ const Input: React.FC<InputProps> = ({
       </Field.Label>
       <Field.Hint />
       <Flex spacing={2}>
-        <ContentEditable
+        <ReactContentEditable
           innerRef={ref as React.RefObject<HTMLElement>}
           html={getHtml(value, markdown)}
           onPaste={handleOnPaste}
