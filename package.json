@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [],
   "type": "commonjs",
   "exports": {
@@ -62,12 +62,12 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "bold-text-editor",
-    "displayName": "Bold text editor",
-    "description": "A bold text editor"
+    "name": "bold-title-editor",
+    "displayName": "Bold title editor",
+    "description": "A bold title/text editor to accent certain parts"
   },
   "name": "strapi-plugin-bold-text-editor",
-  "description": "A bold text editor",
+  "description": "A bold title/text editor to accent certain parts",
   "license": "MIT",
   "author": "jpizzati-uvl <jpizzati@uvltd.com>"
 }

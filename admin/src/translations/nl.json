@@ -1,13 +1,13 @@
 {
-  "bold-text-editor.label": "Vetgedrukte titel editor",
-  "bold-text-editor.description": "Een vetgedrukte titel/teksteditor om bepaalde delen te accentueren",
-  "bold-text-editor.input.bold": "Dikgedrukt",
-  "bold-text-editor.input.clear": "Verwijder format",
-  "bold-text-editor.input.code": "Toon code",
-  "bold-text-editor.options.advanced.requiredField": "Verplicht veld",
-  "bold-text-editor.options.advanced.requiredField.description": "U kunt geen pagina's opslaan wanneer dit veld leeg is",
-  "bold-text-editor.options.base.output": "Mode",
-  "bold-text-editor.options.base.output.description": "Kies de output van de plugin",
-  "bold-text-editor.options.base.output.html": "HTML",
-  "bold-text-editor.options.base.output.markdown": "Markdown"
+  "bold-title-editor.label": "Vetgedrukte titel editor",
+  "bold-title-editor.description": "Een vetgedrukte titel/teksteditor om bepaalde delen te accentueren",
+  "bold-title-editor.input.bold": "Dikgedrukt",
+  "bold-title-editor.input.clear": "Verwijder format",
+  "bold-title-editor.input.code": "Toon code",
+  "bold-title-editor.options.advanced.requiredField": "Verplicht veld",
+  "bold-title-editor.options.advanced.requiredField.description": "U kunt geen pagina's opslaan wanneer dit veld leeg is",
+  "bold-title-editor.options.base.output": "Mode",
+  "bold-title-editor.options.base.output.description": "Kies de output van de plugin",
+  "bold-title-editor.options.base.output.html": "HTML",
+  "bold-title-editor.options.base.output.markdown": "Markdown"
 }
